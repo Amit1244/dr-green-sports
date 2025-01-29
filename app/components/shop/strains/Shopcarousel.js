@@ -69,7 +69,7 @@ export default function ShopCarousel({ strains }) {
             <div className="container mx-auto px-10 max-w-7xl">
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex gap-x-3">
-                        {strains?.map((strain, i) => (
+                        {strains && strains?.length > 0 && strains?.map((strain, i) => (
                             <div
                                 key={i}
                                 className="min-w-[300px]  lg:min-w-[33.33%] rounded-[10px] border-2 border-primary backdrop-blur-[44px] p-6"

@@ -13,7 +13,8 @@ module.exports = {
             fontFamily: {
                 montserrat: ["var(--font-montserrat)"],
                 Cord: ["Cord", "sans-serif"],
-                Glancyr: ["Glancyr", "sans-serif"]
+                Glancyr: ["Glancyr", "sans-serif"],
+                manrope: ['Manrope', 'sans-serif'],
             },
             keyframes: {
                 wiggle: {
