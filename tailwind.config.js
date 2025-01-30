@@ -15,6 +15,10 @@ module.exports = {
                 Cord: ["Cord", "sans-serif"],
                 Glancyr: ["Glancyr", "sans-serif"],
                 manrope: ['Manrope', 'sans-serif'],
+                areaExtended: ['AreaExtended', 'sans-serif'],
+                areaExtendedRegular: ['AreaExtendedRegular', 'sans-serif'],
+                areaNormalRegular: ['AreaNormalRegular', 'sans-serif'],
+                unbounded: ['Unbounded', 'sans-serif'],
             },
             keyframes: {
                 wiggle: {

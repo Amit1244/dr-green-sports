@@ -4,10 +4,6 @@ import Link from "next/link";
 export default async function Footer() {
     return (
         <footer className="relative pt-10 pb-4 sm:pb-10 mt-5">
-
-
-
-
             <div className="container mx-auto lg:w-[80%] px-4 md:px-20">
                 <div className="grid sm:grid-cols-2 gap-x-4 gap-y-8 items-center">
                     <Image
@@ -146,19 +142,19 @@ export default async function Footer() {
                     <div className="flex flex-col sm:flex-row justify-start items-start gap-16">
                         {/* Support Section */}
                         <div>
-                            <p className="text-white text-[19px] uppercase font-semibold tracking-wider mb-4">
+                            <p className="text-white text-[19px] uppercase font-semibold font-areaExtended tracking-wider mb-4">
                                 Support
                             </p>
                             <div className="text-white flex flex-col gap-y-4">
                                 <Link
                                     href="/"
-                                    className="text-base font-medium font-montserrat"
+                                    className="text-base text-[16px] font-[400] font-areaExtendedRegular"
                                 >
                                     Contact
                                 </Link>
                                 <Link
                                     href="/"
-                                    className="text-white uppercasetext-base font-medium font-montserrat"
+                                    className="text-white uppercasetext-base text-[16px] font-[400] font-areaNormalRegular"
                                 >
                                     FAQs
                                 </Link>
@@ -167,31 +163,31 @@ export default async function Footer() {
 
                         {/* Quick Links Section */}
                         <div>
-                            <p className="text-white text-[19px] uppercase font-semibold tracking-wider mb-4">
+                            <p className="text-white text-[19px] uppercase font-semibold tracking-wider font-areaExtended mb-4">
                                 Quick Links
                             </p>
                             <div className="text-white flex flex-col gap-y-4">
                                 <Link
                                     href="https://drgreennft.com/"
-                                    className="text-base font-medium font-montserrat"
+                                    className="text-base text-[16px] font-[400] font-areaExtendedRegular"
                                 >
                                     About Us
                                 </Link>
                                 <Link
                                     href="/#process"
-                                    className="text-white text-base font-medium font-montserrat"
+                                    className="text-white text-base text-[16px] font-[400] font-areaExtendedRegular"
                                 >
                                     The Process
                                 </Link>
                                 <Link
                                     href="#news"
-                                    className="text-white text-base font-medium font-montserrat"
+                                    className="text-white text-base text-[16px] font-[400] font-areaExtendedRegular"
                                 >
                                     News
                                 </Link>
                                 <Link
                                     href="mailto:support@drgreennft.com"
-                                    className="text-white text-base font-medium font-montserrat"
+                                    className="text-white text-base text-[16px] font-[400] font-areaNormalRegular"
                                 >
                                     Contact
                                 </Link>
@@ -200,25 +196,25 @@ export default async function Footer() {
 
                         {/* Legal Section */}
                         <div>
-                            <p className="text-white uppercase text-[19px] font-semibold tracking-wider mb-4">
+                            <p className="text-white uppercase text-[19px] font-semibold font-areaExtended tracking-wider mb-4">
                                 Legal
                             </p>
                             <div className="flex flex-col gap-y-4">
                                 <Link
                                     href="/"
-                                    className="text-white text-base font-medium font-montserrat"
+                                    className="text-white text-base text-[16px] font-[400] font-areaExtendedRegular"
                                 >
                                     Terms
                                 </Link>
                                 <Link
                                     href="/"
-                                    className="text-white text-base font-medium font-montserrat"
+                                    className="text-white text-base text-[16px] font-[400] font-areaExtendedRegular"
                                 >
                                     Privacy
                                 </Link>
                                 <Link
                                     href="/"
-                                    className="text-white text-base font-medium font-montserrat"
+                                    className="text-white text-base text-[16px] font-[400] font-areaNormalRegular"
                                 >
                                     Cookies
                                 </Link>
@@ -228,10 +224,10 @@ export default async function Footer() {
 
 
                     <div>
-                        <p className="text-[19px] font-medium text-[#FFFFFF] tracking-wider mb-4">
+                        <p className="text-[19px] font-semibold uppercase text-[#FFFFFF] tracking-wider mb-4 font-areaExtended">
                             Join the community
                         </p>
-                        <p className="text-base text-[#FFFFFF] mb-2">
+                        <p className="text-base text-[#FFFFFF] mb-2 text-[16px] font-[400] font-areaNormalRegular">
                             Register your details today to ensure you&apos;re
                             among the chosen few who get to witness the dawn of
                             a new era in Cannabis Delivery. Your Digital Key
@@ -254,7 +250,7 @@ export default async function Footer() {
                             </button>
                         </div>
 
-                        <p className="text-[13px] text-white tracking-tight">
+                        <p className="text-[13px] text-white tracking-tight font-[400] font-areaNormalRegular">
                             Your data will be used to process your submission,
                             support your experience throughout this website, and
                             for other purposes described in our{" "}
@@ -263,11 +259,11 @@ export default async function Footer() {
                     </div>
                 </div>
                 <div className="py-6 md:py-24 flex justify-between">
-                    <p className="text-xs text-[#FFFFFF] font-bold">
+                    <p className="text-xs text-[#FFFFFF] text-[12px] font-[500] font-unbounded">
                         2024 &copy; DR GREEN NFT
                     </p>
                     <Link
-                        className="text-xs text-[#FFFFFF] text-[12px]"
+                        className="text-xs text-[#FFFFFF] text-[12px] font-[400] font-areaExtendedRegular"
                         href="/"
                         target="_blank"
                         rel="noreferrer"

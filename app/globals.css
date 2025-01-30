@@ -23,6 +23,34 @@ body {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'AreaExtended';
+    src: url('/fonts/fonnts.com-Area_Extended_Bold.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AreaExtendedRegular';
+    src: url('/fonts/fonnts.com-Area_Extended_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AreaNormalRegular';
+    src: url('/fonts/fonnts.com-Area_Normal_Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Unbounded';
+    src: url('/fonts/Unbounded-Medium.ttf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+}
 
 @font-face {
     font-family: 'Cord';
