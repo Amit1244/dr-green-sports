@@ -269,7 +269,7 @@ export default async function Home() {
                     Scroll to Discover
                 </p>
 
-                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto mix-blend-screen pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
+                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto mix-blend-screen pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-10">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -695,6 +695,9 @@ export default async function Home() {
                     />
 
                     {/* Center Portal GIF */}
+
+
+
                     <img
                         className="z-20"
                         src="/images/general/Green-portal-4.gif"
