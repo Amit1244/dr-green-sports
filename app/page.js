@@ -174,23 +174,24 @@ export default async function Home() {
         take: "9",
         order: "popularity",
     };
+
+    const payload1 = {
+        countryCode: countryCode,
+        take: "9",
+        order: "popularity",
+    };
+
     const params = new URLSearchParams(body).toString();
     // console.log('strains 0000000', session, countryCode, body)
-    const getStrains1 = await fetch(
-        `https://stage-api.drgreennft.com/api/v1/dapp/strains?${params}`,
-        {
-            method: "GET",
-            redirect: "follow",
-            headers: {
-                "x-auth-apikey": process.env.DAPP_API,
-                "x-auth-signature": GenerateSignature(body),
-                "Content-Type": "application/json",
-            },
-            cache: "force-cache",
-        }
-    );
+    // const getStrains1 = await fetch("/api/shop/products/get-strains", {
+    //     method: "POST",
+    //     headers: {
+    //         "content-type": "application/json",
+    //     },
+    //     body: JSON.stringify(payload1),
+    // });
 
-    const strains = await getStrains1.json();
+    // const strains = await getStrains1.json();
 
     const availableLocations = strain?.data?.strainLocations.map((loc) => {
         if (loc.isAvailable) return loc.location.country;
@@ -368,7 +369,8 @@ export default async function Home() {
                                     <span className="green-stroke">by strain</span>
                                 </h2>
                             </div>
-                            <Shopcarousel strains={strains?.data?.strains} />
+                            <Shopcarousel countryCode={countryCode}
+                                takeStrains={"6"} />
 
                             <div className="absolute top-[40%] mix-blend-screen  -z-10">
                                 <img src="/images/general/flame1.png" className=" z-10" alt="" />

@@ -6,14 +6,42 @@ import Image from "next/image";
 import Link from "next/link";
 import { useRef, useCallback, useEffect, useState } from "react";
 
-export default function ShopCarousel({ strains }) {
+export default function ShopCarousel(props) {
     const [emblaRef, emblaApi] = useEmblaCarousel({
         align: "start",
         dragFree: true,
     });
+    const [count, setCount] = useState(props.takeStrains);
+    const [strains, setStrains] = useState(props.strains);
+    const [total, setTotal] = useState(props.totalStrains);
+    const [loading, setLoading] = useState(false);
 
     const buttonNext = useRef(null);
     const buttonPrev = useRef(null);
+    
+    const getStrains = useCallback(async () => {
+        setLoading(true);
+
+        const payload = {
+            countryCode: props.countryCode,
+            take: count,
+            order: "popularity",
+        };
+
+        const res = await fetch("/api/shop/products/get-strains", {
+            method: "POST",
+            headers: {
+                "content-type": "application/json",
+            },
+            body: JSON.stringify(payload),
+        });
+
+        const data = await res.json();
+
+        setStrains(data.data.strains);
+
+        return setLoading(false);
+    }, [count, total, props.countryCode]);
 
     const buttonDisable = (button) => {
         button.classList.add("opacity-50");
@@ -49,6 +77,10 @@ export default function ShopCarousel({ strains }) {
             }
         }
     }, [emblaApi]);
+
+    useEffect(() => {
+        getStrains();
+    }, [getStrains, count]);
 
     return (
         <div className="relative">
