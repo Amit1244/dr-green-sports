@@ -57,7 +57,7 @@ export default function ShopCarousel({ strains }) {
                 title="Previous slide"
                 onClick={scrollPrev}
                 ref={buttonPrev}
-                className="absolute left-10 top-1/2 -translate-y-1/2 z-10 p-4 rounded-full "
+                className="absolute left-2 md:left-10 top-1/2 -translate-y-1/2 z-10 p-4 rounded-full "
             >
                 <Image
                     src="/images/icons/prev-nav.svg"
@@ -66,19 +66,19 @@ export default function ShopCarousel({ strains }) {
                     height={83}
                 />
             </button>
-            <div className="container mx-auto px-10 max-w-7xl">
+            <div className="container mx-auto px-2 md:px-10 ">
                 <div className="overflow-hidden" ref={emblaRef}>
                     <div className="flex gap-x-3">
                         {strains && strains?.length > 0 && strains?.map((strain, i) => (
                             <div
                                 key={i}
-                                className="min-w-[300px]  lg:min-w-[33.33%] rounded-[10px] border-2 border-primary backdrop-blur-[44px] p-6"
+                                className="min-w-[300px]  lg:min-w-[33.33%]  border-2 border-primary backdrop-blur-[44px] p-6"
                             >
                                 <div className="flex gap-2 justify-end items-start">
-                                    <p className="py-1 px-3 rounded-full bg-primary font-semibold text-[10px] uppercase">
+                                    <p className="py-1 px-3  bg-primary !font-montserrat font-semibold text-[10px] uppercase">
                                         {strain?.flavour}
                                     </p>
-                                    <p className="py-1 px-3 rounded-full bg-primary font-semibold text-[10px] uppercase">
+                                    <p className="py-1 px-3  bg-primary !font-montserrat font-semibold text-[10px] uppercase">
                                         {strain?.type}
                                     </p>
                                 </div>
@@ -113,7 +113,7 @@ export default function ShopCarousel({ strains }) {
                 title="Next slide"
                 onClick={scrollNext}
                 ref={buttonNext}
-                className="absolute right-10 top-1/2 -translate-y-1/2 z-10 p-4 rounded-full "
+                className="absolute right-2 md:right-10 top-1/2 -translate-y-1/2 z-10 p-4 rounded-full "
 
             >
                 <Image

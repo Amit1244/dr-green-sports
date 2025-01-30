@@ -37,6 +37,8 @@ export default async function RootLayout({ children }) {
                         href="https://fonts.googleapis.com/css2?family=Cord:wght@400;700&display=swap"
                         rel="stylesheet"
                     />
+                    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+                        rel="stylesheet" />
                     <link
                         rel="preconnect"
                         href="https://use.typekit.net"

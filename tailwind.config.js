@@ -11,7 +11,7 @@ module.exports = {
                 primary: "#D05D1A"
             },
             fontFamily: {
-                montserrat: ["var(--font-montserrat)"],
+                montserrat: ["Montserrat", "sans-serif"],
                 Cord: ["Cord", "sans-serif"],
                 Glancyr: ["Glancyr", "sans-serif"],
                 manrope: ['Manrope', 'sans-serif'],

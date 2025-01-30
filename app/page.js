@@ -269,7 +269,7 @@ export default async function Home() {
                     Scroll to Discover
                 </p>
 
-                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
+                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto mix-blend-screen pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-[-10]">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -369,6 +369,10 @@ export default async function Home() {
                                 </h2>
                             </div>
                             <Shopcarousel strains={strains?.data?.strains} />
+
+                            <div className="absolute top-[40%] mix-blend-screen  -z-10">
+                                <img src="/images/general/flame1.png" className=" z-10" alt="" />
+                            </div>
                         </section>
                     </>
                 )
@@ -433,18 +437,18 @@ export default async function Home() {
                 <div className="container mx-auto px-4 md:px-20">
                     <div className="container mx-auto ">
                         <h1
-                            className="text-transparent text-lg sm:text-5xl uppercase tracking-tighter leading-6 font-cord font-bold  bg-clip-text  text-start stroke-white fill-transparent"
+                            className="text-transparent text-lg sm:text-5xl uppercase tracking-tighter leading-6 font-cord font-light  bg-clip-text  text-start stroke-white fill-transparent"
                             style={{
-                                WebkitTextStroke: "0.8px #fff", // Tailwind primary blue
+                                WebkitTextStroke: "1px #fff", // Tailwind primary blue
                             }}
                         >
-                            blue  dream
+                            blue dream
                         </h1>
                         <h2 className="text-primary text-4xl sm:text-5xl font-extrabold tracking-normal font-cord text-start uppercase mt-1">
                             by fredo
                         </h2>
                     </div>
-                    <div className="mx-auto relative sm:max-w-[80%] md:max-w-full backdrop-blur-[10px] rounded-[4px] border-4 bg-white bg-opacity-15  border-white p-8 sm:p-16 mt-8  grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
+                    <div className="mx-auto relative sm:max-w-[80%] md:max-w-full backdrop-blur-xl rounded-[4px] border-4 bg-white bg-opacity-25  border-white p-8 sm:p-16 mt-8  grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
                         <button
                             className="uppercase  absolute py-2 px-6 right-5 -top-7 rounded-[2px] bg-primary border-primary border-2 text-[15px] md:text-2xl shadow hover:shadow-[0_0_15px_0px_#D05D1A] duration-200 ease-in-out"
                             title="Eligible Conditions"
@@ -509,7 +513,7 @@ export default async function Home() {
                                 .mediaDetails.height
                         }
                         // priority
-                        className="object-contain  object-right-bottom ml-[25%]"
+                        className="object-contain  object-right-bottom ml-[25%] mix-blend-screen"
                     />
                 </div>
             </section>
