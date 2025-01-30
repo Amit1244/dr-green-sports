@@ -270,7 +270,7 @@ export default async function Home() {
                     Scroll to Discover
                 </p>
 
-                <div className="mt-0 lg:mt-[-15%] 2xl:mt-[-20%] w-fit-content ml-auto mix-blend-screen pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-10">
+                <div className="mt-0 lg:mt-[-15%]  w-fit-content ml-auto mix-blend-screen pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-30">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -363,7 +363,7 @@ export default async function Home() {
                 availableLocations && locationData && availableLocations?.[0].toLowerCase().replace(/\s+/g, "") !== locationData?.country?.toLowerCase().replace(/\s+/g, "") && (
                     <>
                         <section id="shop-by-strain" className="relative">
-                            <div className="container mx-auto px-4">
+                            <div className="container mx-auto px-4 mt-20">
                                 <h2 className="mb-8">
                                     Shop <br />
                                     <span className="green-stroke">by strain</span>
@@ -444,10 +444,10 @@ export default async function Home() {
                                 WebkitTextStroke: "1px #fff", // Tailwind primary blue
                             }}
                         >
-                            blue dream
+                            BLUE DREAM
                         </h1>
                         <h2 className="text-primary text-4xl sm:text-5xl font-extrabold tracking-normal font-cord text-start uppercase mt-1">
-                            by fredo
+                            BY FREDO
                         </h2>
                     </div>
                     <div className="mx-auto relative sm:max-w-[80%] md:max-w-full backdrop-blur-xl rounded-[4px] border-4 bg-white bg-opacity-25  border-white p-8 sm:p-16 mt-8  grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
@@ -649,9 +649,9 @@ export default async function Home() {
 
                 <div className="container mx-auto px-4 md:px-20">
                     <h1
-                        className="text-transparent text-2xl sm:text-5xl uppercase tracking-tighter leading-6 font-cord font-bold  bg-clip-text  text-start stroke-white fill-transparent"
+                        className="text-transparent text-2xl sm:text-5xl uppercase tracking-tighter leading-6 font-cord font-light bg-clip-text  text-start stroke-white fill-transparent"
                         style={{
-                            WebkitTextStroke: "0.5px #fff", // Tailwind primary blue
+                            WebkitTextStroke: "1px #fff", // Tailwind primary blue
                         }}
                     >
                         made possible
@@ -660,7 +660,7 @@ export default async function Home() {
                         by dr.green
                     </h2>
                     <p
-                        className="py-3 font-Glancyr"
+                        className="py-3 font-light font-Glancyr"
                         dangerouslySetInnerHTML={{
                             __html: content.pageContent
                                 .madePossibleParagraphText,
@@ -701,11 +701,9 @@ export default async function Home() {
 
 
                     <img
-                        className="z-20"
+                        className="z-20 mb-48"
                         src="/images/general/Green-portal-4.gif"
                         alt="Green Portal"
-                        height={700}
-                        width={700}
                     />
                 </div>
             </div>
@@ -748,9 +746,9 @@ export default async function Home() {
 
                             <div className="text-start mb-5 md:mb-20">
                                 <h1
-                                    className="text-transparent text-lg sm:text-5xl uppercase tracking-wide leading-6 font-cord font-bold  bg-clip-text  text-start stroke-white fill-transparent"
+                                    className="text-transparent text-lg sm:text-7xl uppercase tracking-wide leading-6 font-cord  bg-clip-text  text-start stroke-white fill-transparent"
                                     style={{
-                                        WebkitTextStroke: "0.4px #fff", // Tailwind primary blue
+                                        WebkitTextStroke: "0.1px #fff", // Tailwind primary blue
                                     }}
                                 >
                                     Questions?

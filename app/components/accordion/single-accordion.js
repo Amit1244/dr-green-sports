@@ -26,7 +26,7 @@ export default function SingleAccordion(props) {
     return (
         <div className="each-accordion w-full text-left mb-4 border-2 border-primary rounded-[2px] bg-black/75">
             <button
-                className="w-full text-left text-lg font-semibold py-6 px-6 sm:px-12 flex justify-between items-center gap-4 rounded-[40px]"
+                className="w-full text-left text-lg font-normal font-Glancyr py-6 px-6 sm:px-12 flex justify-between items-center gap-4 rounded-[40px]"
                 onClick={(e) => {
                     toggleAccordion(e.target.closest(".each-accordion"));
                 }}
@@ -57,7 +57,7 @@ export default function SingleAccordion(props) {
             </button>
             <div className="accordion-container w-full h-[0px] overflow-hidden duration-500 ease-in-out">
                 <div className="accordion-text pb-6 px-6 sm:px-12 rounded-[40px]">
-                    <p className="font-light">{props.answer}</p>
+                    <p className="font-[300] font-Glancyr">{props.answer}</p>
                 </div>
             </div>
         </div>
