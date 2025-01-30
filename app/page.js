@@ -270,7 +270,7 @@ export default async function Home() {
                     Scroll to Discover
                 </p>
 
-                <div className="mt-0 lg:mt-[-15%]  w-fit-content ml-auto mix-blend-screen pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-30">
+                <div className="mt-0 lg:mt-[-15%]  w-fit-content ml-auto pointer-events-none max-w-[100%] sm:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%] overflow-hidden z-50">
                     <img
                         src={
                             content.pageContent.heroCelebrityPhoto.node
@@ -372,7 +372,7 @@ export default async function Home() {
                             <Shopcarousel countryCode={countryCode}
                                 takeStrains={"6"} />
 
-                            <div className="absolute top-[40%] mix-blend-screen  -z-10">
+                            <div className="absolute md:top-[40%] max-w-[50%] mix-blend-screen  -z-10">
                                 <img src="/images/general/flame1.png" className=" z-10" alt="" />
                             </div>
                         </section>
@@ -450,7 +450,7 @@ export default async function Home() {
                             BY FREDO
                         </h2>
                     </div>
-                    <div className="mx-auto relative sm:max-w-[80%] md:max-w-full backdrop-blur-xl rounded-[4px] border-4 bg-white bg-opacity-25  border-white p-8 sm:p-16 mt-8  grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
+                    <div className="mx-auto relative sm:max-w-[80%] md:max-w-full backdrop-blur-xl rounded-[4px] border-4 bg-white bg-opacity-10  border-white p-8 sm:p-16 mt-8  grid md:grid-cols-2 gap-8 sm:gap-16 items-center">
                         <button
                             className="uppercase  absolute py-2 px-6 right-5 -top-7 rounded-[2px] bg-primary border-primary border-2 text-[15px] md:text-2xl shadow hover:shadow-[0_0_15px_0px_#D05D1A] duration-200 ease-in-out"
                             title="Eligible Conditions"
@@ -697,13 +697,21 @@ export default async function Home() {
                     />
 
                     {/* Center Portal GIF */}
-
-
-
                     <img
-                        className="z-20 mb-48"
-                        src="/images/general/Green-portal-4.gif"
-                        alt="Green Portal"
+                        src={
+                            content.pageContent.heroCelebrityPhoto.node
+                                .sourceUrl
+                        }
+                        className="z-20 mb-48 w-[50%]"
+                        alt={content.pageContent.heroCelebrityPhoto.node.title}
+                        width={
+                            content.pageContent.heroCelebrityPhoto.node
+                                .mediaDetails.width
+                        }
+                        height={
+                            content.pageContent.heroCelebrityPhoto.node
+                                .mediaDetails.height
+                        }
                     />
                 </div>
             </div>
